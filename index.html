@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html;charset=windows-1251">
+    <meta name="Author" content="Ваганова Арина Владленовна">
+    <link rel="stylesheet" href="styleM.css">
+    <link rel="shortcut icon" type="" href="PNG image.png">
+    <title>LWP-лучшная компания дизайна интерьера</title>
+    <meta name="keywords" content="Дизайн, дизайнер, интерьер, квартира, дом, стиль, обустройка дома, мебель, кухня, спальная комната, гостинная, ремонт" />
+    <meta name="description" content="Построили дом или квартиру но не хватает уюта и стиля? LWP готовы помочь! Лучшие дизайнеры со всего мира помогут сделать 
+    ваш дом местом, покидать которое не захочется. Работаем быстро и по доступной цене. Личная консультация с дизайнером. Работаем с любыми видами помещений.">
+</head>
+<body class="body">
+    <header>
+        <div class="logo"><img src="Снимок экрана (8) (1).png" width="300" height="140"></div>
+        <nav class="nav">
+            <ul class="topmenu">
+                <li class="nav-item"><a href="#">Главная<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Квартиры</a></li>
+                      <li><a href="">Дома</a></li>
+                      <li><a href="">Студии</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">О компании<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Достижения</a></li>
+                      <li><a href="">История</a></li>
+                      <li><a href="">Офисы</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="people.html">Наши дизайнеры</a></li>
+    </header>    
+    <div class="info1">
+       <img src="firstpic.jpeg" class="photo1">
+       <div class="text1">
+        <h1>Кто мы?</h1>
+        <br>
+        <p>"LWP" — мы небольшая команда Дизайнеров интерьера. Мы знаем все нюансы дизайна и строительства и создаем функциональное пространство для наших клиентов.
+        Для нас интерьер — нечто большее, чем просто красивая картинка. В первую очередь, это та энергетика, которую ощущаешь приходя домой, отдыхая от ритма современной жизни и наполняясь для достижения новых вершин. Для каждого идеальный дом с большой буквы — это что-то свое, поэтому мы делаем индивидуальные и неповторимые проекты, отражающие ваш образ жизни.
+    </p></div>
+    </div>
+    <div class="button"><a href="#" class="glo">Подробнее</a></div>
+<hr>
+<div class="info2">
+    <img src="secondpic.jpeg" class="photo2">
+    <div class="text2">
+        <h1>Почему стоит выбирать нас?</h1>
+        <br>
+        <p>"LWP" — место, где креативность, инновации и индивидуальный дизайн объединяются для создания дома мечты. В нашей компании работают уже десятки профессионалов в сфере дизайна. Некоторые из них даже известны по всему миру.
+        Подробную информацию об отзывах и процессе разработки дизайна вы можете найти кликнув по кнопке ниже. А если вы уже работали с нами, то будем рады вашему отзыву). 
+    </p></div>
+</div>
+<div class="button"><a href="#" class="glo">Читать</a></div>
+<footer class="footer">
+    <div class="slider">
+        <!-- Первый слайд -->
+        <div class="item">
+        <img src="304820207_46085082923.jpg">
+        <div class="tekst_sverhu_kartinki">Комфортные гостинные</div>
+          
+            
+        </div>
+        <!-- Второй слайд -->
+        <div class="item">
+          <img src="308220747_54365484432.jpg">
+          <div class="tekst_sverhu_kartinki">Уюные спальни</div>
+          
+            
+        </div>
+        <!-- Третий слайд -->
+        <div class="item">
+          <img src="306583068_57552700432.jpg">
+          <div class="tekst_sverhu_kartinki">Cтильные столовые</div>
+          
+            
+            
+        </div>
+        <!-- Кнопки-стрелочки -->
+        <a class="previous" onclick="previousSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+      </div>
+      <script>let slideIndex = 1;
+        showSlides(slideIndex);
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+        function previousSlide() {
+            showSlides(slideIndex -= 1);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("item");
+            if (n > slides.length) {
+              slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (let slide of slides) {
+                slide.style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        } </script>
+        <div class="contacts">
+            <a href="#" class="botr">Контакты</a>
+        </div>
+</footer>
+    </body>
+
+
+</html>
+
